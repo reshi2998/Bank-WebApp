@@ -1,0 +1,53 @@
+/* 
+    Created on : 19/04/2020, 11:31:51 AM
+    Author     : Josue
+*/
+body{
+    background-image: url(imagenes/fondo6.jpg);
+    background-size: cover;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#wrapper{
+    width: 330px;
+    background: #090909;
+    color: #ffffff; /*color de letra*/
+    margin: auto;
+    margin-top: 1%; /*bajarlo de arriba hacia abajo*/
+    padding: 40px 40px 40px 40px;
+    border-top: 5px solid #141414;
+    border-right: 5px solid #141414;
+    border-left: 5px solid #141414;
+    border-bottom: 5px solid #141414;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+.entrada{
+    width: 320px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+#btnBuscarCliente{
+    width: 324px;
+    height: 40px;
+    border-radius: 6px;
+    background: #cc6600;
+    color: #ffffff;
+    font-size: 20px;
+}
+#tituloForm{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.etiqueta{
+    font-family: calibri;
+    font-size: 25px;
+}
+

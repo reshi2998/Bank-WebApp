@@ -1,0 +1,94 @@
+/* 
+    Created on : 19/04/2020, 12:36:28 PM
+    Author     : Josue
+*/
+body{
+    background-image: url(imagenes/fondo6.jpg);
+    background-size: cover;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* estilos para la ventana modal */
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* animacion */
+    animation: modal 1s 0.5s; /* nombre - duracion de la animacion - retras desde que carga la pagina*/
+    animation-fill-mode: forwards; /* para que el elemento se quede aun cuando termine la animacion */
+    visibility: hidden; /* para que el modal este oculto */
+    opacity: 0;
+}
+.contenido{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    z-index: 50;
+}
+#mensajeError{
+    color: #000;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+}
+.mensajeInfo{
+    font-weight: 700;
+    color: #000;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 17px;
+    font-family: arial;
+}
+#listaInfo{
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 5%;
+    color: #000;
+    font-family: arial;
+}
+#urlCrearÑ:hover{
+    cursor: pointer;
+}
+#cerrar{
+    display: none;
+}
+#cerrar + label{ /* para seleccionar el elemento inmediato despues de cerrar (label) */
+    position: fixed;
+    color: white;
+    font-family: arial;
+    text-align: center;
+    font-size: 25px;
+    z-index: 50; /* posicion en el eje z, para que la X este por encima del modal */
+    background: red;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5%;
+    right: 10px;
+    cursor: pointer;
+    /* animacion */
+    animation: modal 0.5s 0.5s; /* nombre - duracion de la animacion - retras desde que carga la pagina*/
+    animation-fill-mode: forwards; /* para que el elemento se quede aun cuando termine la animacion */
+    visibility: hidden; /* para que el modal este oculto */
+    opacity: 0;
+}
+#cerrar:checked + label, /* cuando el checkbox tenga check va a seleccionar el label */
+#cerrar:checked ~ .modal{ /* cuando el checkbox tenga check va a seleccionar el modal */
+    display: none; /* y ambos van a desaparecer */
+}
+@keyframes modal{
+    100%{ /* cuando termine la animacion */
+        visibility: visible;
+        opacity: 1;
+    }
+}
+

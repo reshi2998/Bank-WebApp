@@ -1,0 +1,89 @@
+/* 
+    Created on : 18/04/2020, 04:57:56 PM
+    Author     : Josue
+*/
+body{
+    background-image: url(imagenes/fondo6.jpg);
+    background-size: cover;
+    font-family: arial;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#wrapper{
+    width: 600px;
+    background: #090909;
+    color: #ffffff; /*color de letra*/
+    margin: auto;
+    padding: 27px 40px 27px 40px;
+    border-top: 5px solid #141414;
+    border-right: 5px solid #141414;
+    border-left: 5px solid #141414;
+    border-bottom: 5px solid #141414;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+#tablaForm {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    border-bottom: solid 5px #cc3300;
+}
+th, td{
+    padding: 10px;
+}
+tr:hover td{
+    opacity: 0.8;
+}
+.entrada{
+    width: 320px;
+    height: 27px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+select{
+    width: 320px;
+    height: 27px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+#btnCrearCuenta{
+    width: 324px;
+    height: 40px;
+    border-radius: 6px;
+    background: #cc6600;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 23%;
+}
+#btnDeposito{
+    width: 324px;
+    height: 40px;
+    border-radius: 6px;
+    background: #cc6600;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 23%;
+}
+#tituloForm{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.label{
+    font-family: calibri;
+    font-size: 20px;
+}

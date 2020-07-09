@@ -1,0 +1,92 @@
+/* 
+    Created on : 11/04/2020, 04:33:52 PM
+    Author     : Josue
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#barraMenu{
+    height: 50px;
+    background: #bd6a03;
+    color: white;
+}
+#barraMenu label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#btnMenu{
+    display: none;
+}
+.menu ul{
+    background: #bd6a03;
+    display: flex;
+    list-style: none;
+}
+.menu ul ul{
+    display: none;
+}
+.menu li{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu a span{
+    margin-left: 10px;
+}
+.menu ul li:hover ul{ /*al pasar el cursor por un item se desplieguen los subitems*/
+    display: block;
+    position: absolute; /*para que al desplegarse no se despliegue en todo el largo*/
+}
+.opciones{
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px){ /*cuando el ancho sea 768px*/
+    #barraMenu label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.4s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li:hover ul{
+        display: none;
+        position: static;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btnMenu:checked ~ .menu{ /*cuando el btnMenu tenga el check aparecera el menu*/
+        margin: 0;
+    }
+    .menu ul ul{
+        background: rgba(0,0,0,0.4);
+    }
+    .menu ul ul a{
+        padding: 15px 40px;
+    }
+}

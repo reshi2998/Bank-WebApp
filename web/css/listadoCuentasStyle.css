@@ -1,0 +1,140 @@
+body {
+    background-image: url(imagenes/fondo3.jpeg);
+    background-size: cover;
+}
+#wrapper {
+    font: 12pt sans-serif;
+}
+#wrapper header {
+    background-color: #000;
+    color: white;
+    padding: 8px 8px 12px 8px;
+    opacity: 0.9;
+    border-bottom: #fff dashed;
+}
+#wrapper header h1 {
+    font-size: 16pt;
+    margin: 4px;
+    margin-left: 16px;
+}
+#navForms{
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0.9;
+}
+#navForms ul{
+    display: flex;
+    list-style: none;
+}
+header nav {
+    margin: 4px;
+    margin-top: 16px;
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+header nav li { 
+    border-radius: 4px;
+    float: left;
+    margin: 0px 4px 0px 4px; 
+    padding: 8px 4px 8px 4px;
+}
+header nav li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+}
+header nav li:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+header nav .active {
+    padding: 5px 2px 5px 2px;
+    background-color: white;
+    color: white;
+}
+#wrapper #contents {
+    background-image: url('./imagenes/estudiantes.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 240px;
+}
+#wrapper #contents form input,
+#wrapper #contents form button {
+    font: inherit;
+}
+#wrapper #contents .info {
+    border: 2px solid darkolivegreen;
+    border-radius: 16px; 
+    margin: 8px 8px 8px 24px;
+    padding: 8px 16px 8px 16px;
+    width: 45%;
+}
+#wrapper #contents .tablaCuentas {
+    border: none;
+}
+.tablaCuentas {
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 10pt;
+    padding: 2px 8px 2px 8px ;
+    width: 50%;
+    height: 200px;
+}
+.tablaCuentas thead {
+    color: white;
+    margin-bottom: 16px;
+}
+.tablaCuentas thead tr {
+    background-color: #000000;
+    display: block;
+    /* width: 100%; */
+}
+.tablaCuentas tbody {
+    display: block;
+    
+    overflow: auto;
+    width: 100%;
+}
+.tablaCuentas tbody tr {
+    width: 100%;
+}
+.tablaCuentas th {
+    padding-left: 16px;
+    text-align: left;    
+}
+.tablaCuentas tbody tr:nth-child(odd) {
+    background-color: white;
+}
+.tablaCuentas tbody tr:nth-child(even) {
+    background-color: #d5dec5;
+}
+#tablaForm2{
+    margin-left: 180px;
+}
+.tdDatos{
+    width: 150px;
+    padding: 4px 12px 4px 12px;
+    border-right: 1px dotted darkolivegreen;
+}
+.thTitulos{
+    width: 150px;
+    padding: 4px 12px 4px 12px;
+    border-right: 1px dotted darkolivegreen;
+}
+.etiqueta{
+    color: white;
+}
+.btn{
+    background: #cc6600;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn:hover{
+    cursor: pointer;
+}
